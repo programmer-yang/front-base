@@ -18,7 +18,7 @@ git clone git@code.aliyun.com:xxxx/xxx.git
 
 `clone`一个库到本地（通常当给你分派任务后，会告诉你  一个当前项目的 git 地址。所以你做的的第一件事就是把服务器上的代码`clone`到本地）
 
-> 我们将本地 git 环境分为个部分 ：工作目录、暂存区、本地仓库或者叫 HEAD 区
+> 我们将本地 git 环境分为三个部分 ：工作目录、暂存区、本地仓库或者叫 HEAD 区
 
 #### add
 
@@ -26,7 +26,7 @@ git clone git@code.aliyun.com:xxxx/xxx.git
 git add *
 ```
 
-把你的修改内容提交到暂存区，\*代表所有的修改，你也可以只  添加某个文件
+把你的修改内容提交到暂存区，`*` 代表所有的修改，你也可以只  添加某个文件: `git add index.js`
 
 #### commit
 
@@ -60,10 +60,11 @@ git pull origin master
 
 #### 其他
 
-还有关于 分支 tag log 等技巧，请自己在参考资料中  学习
+还有关于`branch`、`tag`、`log`等技巧，请自己在参考资料中学习
 
 ---
 
 ### 参考资料
 
-http://rogerdudler.github.io/git-guide/index.zh.html
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+http://www.runoob.com/git/git-tutorial.html
