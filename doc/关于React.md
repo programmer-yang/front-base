@@ -3,6 +3,8 @@
 React 是一个用于构建用户界面的 JAVASCRIPT 库
 React 主要用于构建 UI，很多人认为 React 是 MVC 中的 V（视图）
 
+> `demo/04` 下有一个 react 环境
+
 ### JSX
 
 JSX 是一个看起来很像 XML 的 JavaScript 语法扩展。
