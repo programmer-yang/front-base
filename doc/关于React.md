@@ -1,6 +1,6 @@
 ## React
 
-React 是一个用于构建用户界面的 JAVASCRIPT 库
+React 是一个用于构建用户界面的 JAVASCRIPT 库  
 React 主要用于构建 UI，很多人认为 React 是 MVC 中的 V（视图）
 
 > `demo/04` 下有一个 react 环境
@@ -107,3 +107,7 @@ class Demo extends Component {
 ### 单向数据流
 
 React 中的数据永远是从上层到下层的
+
+> 相关资料：
+> React 生命周期：https://csspod.com/understanding-reactjs-lifecycle-methods/  
+> React-Router：https://reacttraining.com/react-router/web/api/history
