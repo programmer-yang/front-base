@@ -16,4 +16,7 @@
 
 ---
 
+参考：
+[2018-react-技术栈](https://raw.githubusercontent.com/adam-golab/react-developer-roadmap/master/roadmap.png)
+
 > 大家在阅读过程中发现错别字或者其他什么错误，请及时在钉钉上跟我联系，更好的是参与到编辑工作中来，一起来完善这个文档

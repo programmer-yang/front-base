@@ -66,5 +66,5 @@ git pull origin master
 
 ### 参考资料
 
-http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html  
 http://www.runoob.com/git/git-tutorial.html
