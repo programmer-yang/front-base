@@ -8,10 +8,11 @@
 2.  [关于 Node](./doc/关于Node.md)
 3.  浅谈 ES6
 4.  Webpack 基础知识
-5.  [React+React-Router](./doc/关于React.md)
-6.  Mobx+Redux
-7.  Antd
-8.  贯穿案例
+5.  HTML+CSS 基础及任务思路
+6.  [React+React-Router](./doc/关于React.md)
+7.  Mobx+Redux
+8.  Antd
+9.  贯穿案例
 
 ---
 
