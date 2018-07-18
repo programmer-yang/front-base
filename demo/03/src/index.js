@@ -1,12 +1,26 @@
-class Dog {
-  constructor(name, color) {
+class Animal {
+  constructor(props) {
+    const { name, type } = props;
     this.name = name;
-    this.color = color;
+    this.type = type;
   }
-
-  sayHi() {
-    console.log(`hello, my name is ${this.name}, i'm ${this.color}`);
-  }
+  sayHi = () => {
+    console.log(`Hello, 我是一只${this.type}, 我的名字叫${this.name}`);
+  };
 }
 
-new Dog("大毛", "金色").sayHi();
+class Dog extends Animal {
+  constructor(props) {
+    super(props);
+    const { characteristic } = props;
+    this.characteristic = characteristic;
+  }
+  performance = () => {
+    console.log(`我会${this.characteristic}`);
+  };
+}
+
+const dog = new Dog({ name: "大毛", type: "金毛", characteristic: "玩球" });
+
+dog.sayHi();
+dog.performance();

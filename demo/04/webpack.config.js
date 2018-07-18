@@ -2,6 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const appDirectory = fs.realpathSync(process.cwd())
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
@@ -32,7 +33,10 @@ module.exports = {
         oneOf: [
           {
             test: /\.css$/,
-            use: ['style-loader', 'css-loader']
+            use: ExtractTextPlugin.extract({
+              fallback: 'style-loader',
+              use: 'css-loader'
+            })
           },
           {
             test: /\.less$/,
@@ -44,7 +48,7 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
-                  modules: true,
+                  modules: false,
                   localIdentName: '[name]__[local]___[hash:base64:5]'
                 }
               },
@@ -65,7 +69,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 9000,
     historyApiFallback: true
@@ -75,6 +79,9 @@ module.exports = {
       inject: true,
       template: resolveApp('public/index.html')
     }),
-    new WebpackBar()
+    new WebpackBar(),
+    new ExtractTextPlugin({
+      filename: 'style.css'
+    })
   ]
 }

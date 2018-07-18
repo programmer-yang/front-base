@@ -1,4 +1,18 @@
-import ReactDOM from "react-dom";
-import React from "react";
+class Demo {
+  constructor() {
+    this.container = document.createElement('div')
+    document.body.appendChild(this.container)
+    console.log(this.container)
+    this.render()
+  }
+  render() {
+    this.container.innerHTML = `
+      <h2>Hello Webpck</h2>
+      <img src="hashiqi.jpeg" />
+    `
+  }
+}
 
-ReactDOM.render(<h1>Hello React</h1>, document.getElementById("root"));
+;(function() {
+  new Demo()
+})()

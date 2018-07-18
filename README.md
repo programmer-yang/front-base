@@ -6,7 +6,7 @@
 
 1.  [关于 Git](./doc/关于Git.md)
 2.  [关于 Node](./doc/关于Node.md)
-3.  浅谈 ES6
+3.  [浅谈 ES6](./doc/关于ES6.md)
 4.  Webpack 基础知识
 5.  HTML+CSS 基础及任务思路
 6.  [React+React-Router](./doc/关于React.md)
