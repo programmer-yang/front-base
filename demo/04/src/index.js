@@ -8,7 +8,7 @@ class Demo {
   render() {
     this.container.innerHTML = `
       <h2>Hello Webpck</h2>
-      <img src="hashiqi.jpeg" />
+      <img src="imgs/hashiqi.jpeg" />
     `
   }
 }
