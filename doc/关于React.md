@@ -3,7 +3,7 @@
 React 是一个用于构建用户界面的 JAVASCRIPT 库  
 React 主要用于构建 UI，很多人认为 React 是 MVC 中的 V（视图）
 
-> `demo/04` 下有一个 react 环境
+> `demo/07` 下有一个 react 环境
 
 ### JSX
 
@@ -41,7 +41,7 @@ const Demo = () => {
 
 ### 有状态
 
-有自己的生命周期、状态
+有自己的生命周期、状态、属性
 
 ```javascript
 import React, { Component } from "react";
@@ -88,7 +88,7 @@ class Demo extends Component {
   state = {
     name: "React"
   };
-  clicl = () => {
+  click = () => {
     this.setState({
       name: "React 666"
     });

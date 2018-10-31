@@ -1,14 +1,19 @@
-import React from 'react'
-import { Button } from 'antd'
-import Content from './Content'
+import React, { Component } from 'react'
+import { get } from './utils/require'
 
-const App = () => {
-  return (
-    <div>
-      <Button type="primary">Click</Button>
-      <Content />
-    </div>
-  )
+class Demo extends Component {
+  componentDidMount() {
+    get('https://jsonplaceholder.typicode.com/posts').then(res => {
+      console.log(res)
+    })
+  }
+  render() {
+    return (
+      <div>
+        <img src="./hashiqi.jpeg" alt="" />
+      </div>
+    )
+  }
 }
 
-export default App
+export default Demo
